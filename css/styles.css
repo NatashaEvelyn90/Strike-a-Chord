@@ -35,8 +35,8 @@ header {
 }
 
 header h1 {
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
+  	font-family: "DM Serif Display", serif;
+  	font-weight: 400;
 }
 
 /* Style rules for navigation area */
@@ -74,7 +74,7 @@ main {
 main p {
 	font-size: 1.25em;
 }
-
+ 
 .action {
 	font-size: 1.25em;
 	color: #373684; 
@@ -85,11 +85,11 @@ main p {
 #piano, #guitar, #violin {
     margin: 0 2%;
 }
-
+ 
 #info {
-    clear: left;
-    background-color: #c0caf7;
-    padding: 1% 2%;
+   clear: left;
+   background-color: #c0caf7;
+   padding: 1% 2%;
 }
 
 #info ul {
@@ -125,7 +125,7 @@ main p {
     text-decoration: none;
     font-weight: bold;
 }
-
+ 
 .map {
     border: 5px solid #373684;
 	width: 95%;
@@ -146,7 +146,8 @@ footer a {
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
-	/* Tablet Viewport: Show tab-desk class, hide mobile class */  
+
+/* Tablet Viewport: Show tab-desk class, hide mobile class */  
 .tab-desk {
     display: block;
 } 
@@ -159,4 +160,79 @@ span.tab-desk {
     display: inline;
 }
 
+  
+/* Tablet Viewport: Style rules for nav area */
+nav li {
+	border-top: none;
+	display: inline-block;
+	font-size: 1.5em;
+	border-right: 1px solid #e5e9fc;
+}
+
+nav li:last-child {
+	border-right: none;
+}
+
+nav li a {
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+
+/* Tablet Viewport: Style rule for map */
+.map {
+	width: 500px;
+	height: 450px;
+}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print {
+
+/* Desktop Viewport: Style rule for header */
+
+header {
+	padding: 2%;
+}
+
+/* Desktop Viewport: Style rules for nav area */
+
+nav li a {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+nav li a:hover {
+	color: #373684;
+	background-color: #e5e9fc;
+}
+
+/* Desktop Viewport: Style rules for main content */
+#info ul {
+	margin-left: 5%;
+}
+
+main h3 {
+	font-size: 1.5em;
+}
+
+#piano, #guitar, #violin {
+	width: 29%;
+	float: left;
+	margin: 0 0 2% 2%;
+}
+
+}
+
+/* Media Query for Print */
+@media print {
+
+	body {
+		background-color: #fff;
+		color: #000;
+	}
 }
